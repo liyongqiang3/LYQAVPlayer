@@ -1,1 +1,1 @@
-../../../../../TYVideoPlayer/Classes/player/TYVideoResourceLoader.h
+../../../../TYVideoPlayer/Classes/player/TYVideoResourceLoader.h

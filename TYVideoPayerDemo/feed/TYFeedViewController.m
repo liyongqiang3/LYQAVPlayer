@@ -114,7 +114,7 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //    NSLog(@"willDisplayCell %@", @(indexPath.row));
+    NSLog(@"willDisplayCell %@", @(indexPath.row));
     
     TYfeedPlayCell *feedCell = (TYfeedPlayCell *)cell;
     [feedCell prepareToPlay];

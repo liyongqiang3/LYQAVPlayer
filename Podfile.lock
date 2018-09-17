@@ -8,7 +8,7 @@ PODS:
 DEPENDENCIES:
   - Masonry
   - SDWebImage (~> 3.7)
-  - TYVideoPlayer (from `../`)
+  - TYVideoPlayer (from `.`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -17,13 +17,13 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   TYVideoPlayer:
-    :path: "../"
+    :path: "."
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TYVideoPlayer: f0c25e06243c9760a1a0984bc90bfd0f76ff44d0
 
-PODFILE CHECKSUM: 3c78b0fef77475ec1220e8d5affe90fdffe818ac
+PODFILE CHECKSUM: 3d470c486610efdcaa534143bb9e5b16c6f73606
 
 COCOAPODS: 1.5.3

@@ -11,7 +11,7 @@ target 'TYVideoPlayerDemo' do
   pod 'SDWebImage', '~>3.7'
   pod 'Masonry'
 #    pod 'FLEX'
-    pod 'TYVideoPlayer', :path => '../'
+    pod 'TYVideoPlayer', :path => '.'
   # Pods for TYVideoPlayerDemo
   
   post_install do |installer|

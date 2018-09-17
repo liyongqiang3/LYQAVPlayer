@@ -1,0 +1,28 @@
+{
+  "name": "TYVideoPlayer",
+  "version": "0.0.1",
+  "summary": "A short description of TYVideoPlayer.",
+  "description": "A video player for iOS platform, functions include: player basic control, video cache while playing, prefetching, and other utilities.",
+  "homepage": "http://confluence.tangyishipin.com/pages/viewpage.action?pageId=1933486",
+  "license": {
+    "type": "MIT",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "liyongqiang": "1184954731@qq.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "git@localhost/TYVideoPlayer.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "TYVideoPlayer/Classes/*.{h,m}",
+    "TYVideoPlayer/Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "frameworks": "Foundation"
+}

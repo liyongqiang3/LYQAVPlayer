@@ -1,0 +1,1274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E27FF5D7AB583F091F11AE78735475 /* TYVideoPlayerManger.h in Headers */ = {isa = PBXBuildFile; fileRef = EADFB4956010628944C2B2BCD49BA196 /* TYVideoPlayerManger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		00FCAC5BCD9B8CFA2E5948422CD4DDAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EC260FCAEDFAE9C78B08657A81FC61 /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		026D162622B576A26AF373A66B029492 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 812AEC9B4D71C634BBFDA7CE400419DC /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		03C6EBF052F4AD00F50DBB7B3E8EBCAF /* TYVideoLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E47536A9E9A6617772E0F1CDEC2DA46B /* TYVideoLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0425EA654C52A25A0EB21E0BB96A2C39 /* TYVideoPrefetchTaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09617D0F35ACDFA87499330DA2F55868 /* TYVideoPrefetchTaskManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		048B9F89E96F753E022881137CA38094 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CB972B4096D34E5E1C20AB63951C292F /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		049B460E1DDF110E868627655CE0ADEA /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2724F19D239ED7EE6C1413FED6234B9B /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07772D30F4DC9905E74D471C59C80339 /* TYVideoCachePrefetchTask.h in Headers */ = {isa = PBXBuildFile; fileRef = CCB8AE93717F5923BAD68304D7F33F87 /* TYVideoCachePrefetchTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B1597F67551A349C0A04B01F4375437 /* TYVideoDiskCacheManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 616B9F688FE23B72E150A75F24F77A09 /* TYVideoDiskCacheManger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0BED362262BF36B8F775BC5810DD7EDE /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BD9D5A3FF68C861674BD59F800D0B6 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C88070589AF106F6E070A28AED603CC /* TYURLTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 172EB13D888941A662E7EA117F3A4B8F /* TYURLTransformer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0D0DFF226A21C64CDCA65CEEEF94F31A /* TYVideoPlayerDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE5EE7CA80CACCEDF0402B70C79B36D /* TYVideoPlayerDefines.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0F1DBA49E324F83ED1EA6C58D4C39425 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 132C94D3863795B73124FE8D422F6C3D /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1030437A6DDDEDB3F5848C4E6D03E06A /* TYVideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7452F5B6064E3486C06D43CB9F23B0B9 /* TYVideoPlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		110457794372355D8F19E352F45A1A2E /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DACA137FE1D94AF52852AF4E5164C8 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		139E4EE5FEE55D9FABB9C14EE39A1A1B /* TYVideoCachePlayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 66930C6D5EA7BEE644A3B28F62EDD7DA /* TYVideoCachePlayTask.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		167E94E3ADF2EC4DD776139B63CA26CA /* TYVideoPrefetchHitRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 408596FC83B697FD9D51680CE344046B /* TYVideoPrefetchHitRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16F27DB01EC92A9768315AA22446CB15 /* NSTimer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6821D08866E3C8531C416F0A71A0EBB /* NSTimer+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		18A7326855DBC1F30922EDC2BC9EFB3D /* TYVideoDiskCacheDeleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9220B665C40DF98DFE0AD381F0F8258 /* TYVideoDiskCacheDeleteManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1B83201F8B0265DD2B50D58560378798 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BF447F762A19B107B9C300B98449EC /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1D9ECC777D46E9AB60E55C52A6285256 /* TYVideoPlayerDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = EF475DD486B992E5CA921CFD0EA6C8D4 /* TYVideoPlayerDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1EC8595D0E176DB06815789B6F7E35C1 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2001EA1592F51F6652778697C14AF860 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1ED7835E195AAB6209FBE3C828860916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511B4C0EDC384F0B076B83C01B16A64A /* Foundation.framework */; };
+		1EF6F0C63CD6B0072DA3BEE2FFE42685 /* TYVideoPlayerManger+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BDB71C81C1DC313D0FD6CC9D33C2CE /* TYVideoPlayerManger+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1FF3C6D64DA9D85BD75F8E93DA3E1F7B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F44BD255E50D0FD6BC9B653A045242 /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		20BF8EF883B0E1D0323D0DA620AD47BF /* TYVideoPrefetchTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3AEDC96431BBB40293C46010E7F342 /* TYVideoPrefetchTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23F10B034D236DE5CDFC44D52E81AF24 /* TYVideoCachePrefetchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 77185A6E247AF758CA43C1226315D0A3 /* TYVideoCachePrefetchTask.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2887295E7F5E35494BBE9ED729F595A0 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 269195D4D86726F1C3BC7B214FA81E9A /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28AB47E5CA0B2A1E455B55613239F661 /* TYVideoCacheRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF9EC1908FC13BA899BE7BC1AFF136A /* TYVideoCacheRequestDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A6EEFDF3EE2BBBF63F6063C3F6747A1 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B00DB9BBBA49B90C30C25762EF2FFD /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AF8E8005BF2A4EBAC866F0A1AF5975C /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C045CCA3DC0ED6D3BD9D8AD04F90E0 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		322066CFEAD1FAD9EF0977D87DE8D189 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC367098ABC943AE5B1E3F06D6CF1AB9 /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		34416827EF752E3341C5E58A6D391D64 /* TYVideoDiskCacheFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121749FFBE3FADE703B26D68E3AA2C4 /* TYVideoDiskCacheFileHandle.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		37DD239D9297105B79C8BFC731CFC1A0 /* TYVideoPrefetchTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5BC767D408340BB495B8C20DB27C /* TYVideoPrefetchTaskManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3FCD300B10997F819598C597B45D61EE /* TYVideoPlayerManger+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A549A9BE4C478D5DCD8708E840131A /* TYVideoPlayerManger+Private.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		44081CCF462AE437F36222476DDA9816 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E56E4CBBDABDE781DDBEDA953D2230 /* UIKit.framework */; };
+		44B2B9FC18A4DC856D17D02F767A8F5A /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 364493F4789B941EFC270AD0A48F74C1 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4945E1A50E35B1C211E354F917987289 /* TYVideoPrefetchHitRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2313B4B17CCAE56A946585EDA95404 /* TYVideoPrefetchHitRecorder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49696D14A9B6D4219E9FA09898645AF2 /* TYVideoPlayerManger+Public.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE627891CCD82AD1A5973CE9779659C /* TYVideoPlayerManger+Public.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B1ADE4E807D558D01E86AD815EA706B /* TYVideoObjectPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC35E55CF685BCA34DEE786A51C3EB /* TYVideoObjectPool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4E3EDE82137478F4649D7313AEF21240 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE0E803DE8B0C9A4F0A1058307D684 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		50D7CE30CDC109239664870CF9F3D863 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC1B5C617DB0842B54E8CAD57A58D94 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		513AD7313570F9F026D4A2ADF26A9F03 /* TYVideoCachePlayTask.h in Headers */ = {isa = PBXBuildFile; fileRef = C4495856B313A2BA98B523D751477F42 /* TYVideoCachePlayTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5587584440CCD5931C3DC8C48836E5B3 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B0A251641AA0FAF060C6771D43F5FD /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56CEE969774F2822D45438CD24A7D105 /* TYVideoDiskCacheConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DC75545C630734634E5ECC683347D3 /* TYVideoDiskCacheConfiguration.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5715EB237F6043449E4E799E473791B0 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1C8DDFC0076920AAE113A2E25A8454 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59E460AA853038A50B89ED33CC615FB4 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D50F9C411424DB4FCBADC404D78801 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A6822764ACE360C75766E1EBC5B6F09 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D76599D9D0F32B4AEDB2736CD0E5566 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5B3F88A3B323752583AA0CF2998B91F7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 45838C1EA9BA66C562DD89D87D8E562C /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6041930BC3BF26EBD7A74CB5CD895FC2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3EF42B30E8BEB4C7D2DE75A3897A6 /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		652383E6782E5A620B175FC6AF00827D /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E33D4DDA12361170642CB50F2ACB58F /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		699096520CABA15A0196609EAA54D366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511B4C0EDC384F0B076B83C01B16A64A /* Foundation.framework */; };
+		6E942FD81C0F4545C3527C36FE4BB907 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B198A8D02B8FFA091794D0DF10CC3B8 /* SDImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6FFA6E177AB771D759A07238EDB54702 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3ACBEA528A0E327BCBF4F12B150AFB /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7157D66DCE09397047A7ECF10F15DCBF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E4BAB82E15D2A7501BB9B32A230E631D /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74B35EFA8908D0C58DA8DD64B02A5331 /* TYVideoCacheRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5EE9ABC3608206C30BC995E06DD0B5 /* TYVideoCacheRequestTask.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		78E4137647205447C5DF46DF03B844F0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4179A9EA206056428C0C5AC09BFD6C6A /* ImageIO.framework */; };
+		79C734C0807C7FB116B865DC06266F98 /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D5D26A0DCE496C7B2E3CD7D4967CCB /* NSTimer+BlocksKit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7B029651BF1EE1BD0E8A09E2CFF68D0B /* Pods-TYVideoPlayerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F2CF4C006F1AEB806BEAE5E3874300 /* Pods-TYVideoPlayerDemo-dummy.m */; };
+		7C7D538AF765898EB22C1E06F39EF437 /* TYVideoDiskCacheFileHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4F18F53C92CABA31ECD2EF26F07951 /* TYVideoDiskCacheFileHandle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FE1C36A12C885ECCD858E05C3685AF5 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DEE5851969BE5CBE3D443ABFDE03E75 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84A388A3CBC061E9B51C691687A8C57C /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB76871ED5A8B242247E2F2AFBDB3B3D /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8A01A000B10510D4424E44781AC03814 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3325100DD0C97A986AC74243C12456 /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8C4F1EBC4F46C39FF03161A2B15ED6D2 /* TYVideoPlayerManageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC39FBFAC66081D7A66F4A645BCDDB8 /* TYVideoPlayerManageDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FD9748C3ED58A0EE65630E95CB18248 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD4EC79A8966E89A22BC20DA5BE2547 /* Masonry-dummy.m */; };
+		92B03DE6D045A5C786E6D424F8C06246 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4125AA55A6F056F1DC4A27319178CA41 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94792886D9DF6120F6270817EEC2A754 /* TYURLTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = E178C2BD9ADE0E9FBC2142039EC53348 /* TYURLTransformer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B5D721633B82BF8FE44D1A435434DF9 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C3F06DB0EF3CAA964C89D66047D595 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9DFD7C924BB0A4C085A1DAC375C34ED2 /* TYVideoObjectPool.h in Headers */ = {isa = PBXBuildFile; fileRef = B057DFB609BD5B70A0159E03AE4923A2 /* TYVideoObjectPool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E7293A6B9230B65DC6F56765C42D349 /* TYVideoResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A560B19AE4F0DFD40374135F3BFB5C /* TYVideoResourceLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5098D3E7DE38B42F83E2BA7A9F81652 /* TYVideoDiskCacheConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B58DF5A9A4D28D026BE74AFBAD9DDB5 /* TYVideoDiskCacheConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A755946A04EAAF09C26503450CA061BC /* TYVideoPrefetchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA0CD641F2198D2FAAA32F21918149 /* TYVideoPrefetchTask.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AB6F6A70075BC36C4A2C704651FB38C5 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = F58D3D4EF5A80199BAE613449DB45972 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADB022A853D74C0A9F48BC16D4EA59CF /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBC9BE453EA69C6CADC7CD08B3019EC /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AFAC4AF4D7EB8A13FD84460FBEA050E8 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B349D99C61501A099836DE7174F4B /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AFD1C23ED5A63F7B95EE6B1C15D2C2A7 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A905CDB859509AD1F9A1BB9F4BEEB7 /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B2023AB35A6416DAA4EEC659148DA724 /* TYVideoPlayerNetworkDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4C7A6D038296058B17607718D9C4DD /* TYVideoPlayerNetworkDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B249D0DC661795BF1C0D5DE7531AAF1B /* TYVideoPlayerManger+Public.m in Sources */ = {isa = PBXBuildFile; fileRef = F82F6BA3D38519E5CEBD9380AF4F9370 /* TYVideoPlayerManger+Public.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B4BEBC36B586556BFDEDDB9F6D669239 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB8666144F9D0F7E45E10C5C322969F /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B5BE571A0725C4506001C206FB69C2F7 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F496FF0A1ACE3FB4E31C3AD986EA873A /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA6E56CC2AFF9D9941327BCAE3338375 /* TYVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2662D1BE06B5B751C4E2DD228BC8D9 /* TYVideoPlayerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C0953168C5916BF83D7C7BDE01A2A300 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D26F8FBA9A2610B479BB88D173365FA /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C12F9A73BC60F3EC174B80C80BF89BC3 /* TYVideoPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D39C36599B2AF09089EAB247EDE45B /* TYVideoPlayer-dummy.m */; };
+		C287C8A924DED60C632046E1B34270F6 /* TYVideoDiskCacheDeleteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D87AB0E8E642B10D751AEFCE00470EC /* TYVideoDiskCacheDeleteManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C28C325D69C07519B4C7268ECB11257E /* TYVideoPlayerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E935A5E74D0E989F7EBF3D15B5C94B /* TYVideoPlayerManger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C523B3CC9B72C9EEA2687420387530E8 /* TYVideoNetWorkRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C5FE30821CE63EBD8D015CD92B664BA1 /* TYVideoNetWorkRequestDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C52E4A8F7904E539018B5FAB53874C1F /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 950DF4B0FB63EC566AF37820C1D2E95B /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C54464389A3DEB20914DD86145BD4447 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4B827FF2C4CFCDFD5E986DB79590DC /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CC338225AE745B26534C73435E297794 /* TYVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE4A4C701F179C4ED5FEB4D9548EA69 /* TYVideoPlayerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE8C9BD112DEBE48EA279947C4948496 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1103C5C6FE9ADA37C509CF6973B1E4C9 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D013F2FF214F948500E4FA09 /* TYVideoPlayerManger+Error.h in Headers */ = {isa = PBXBuildFile; fileRef = D013F2FD214F948500E4FA09 /* TYVideoPlayerManger+Error.h */; };
+		D013F300214F948500E4FA09 /* TYVideoPlayerManger+Error.m in Sources */ = {isa = PBXBuildFile; fileRef = D013F2FE214F948500E4FA09 /* TYVideoPlayerManger+Error.m */; };
+		D23043C70E32501E391306C834911684 /* TYVideoPlayerEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ABB916ECAD303EDD9A63FD26D7E9A11 /* TYVideoPlayerEnum.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5F525DFBB90A7449A7847A51E31EC61 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C6EFB4A74B38E895F2E80141D3ABA1EB /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB2EE9A45ACEB09019A582AB50B4AD48 /* TYVideoResourceDeallocManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E9D0040769540FFE45F2E9F6B9A56D /* TYVideoResourceDeallocManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC00CBC7E244A684179B3523830D0A1B /* TYVideoDiskCacheManger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF80CE53CC2F88A7B75E76A8FC7E4CD /* TYVideoDiskCacheManger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD26C25DA2450C3B37A0228DF13CFE47 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 867034E590AFE0E10D31589402AD68B4 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E15BD23C9F8304D4E93A37A5C21F8F0F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B8E9360B71CC416DB172B88622C7F8 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E17EFF8EE8AB07813E30DEC230C3983B /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8179818279A7DFCAA0E8FDBDE02525 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E3090CA06472C3D565C4EE5588964617 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CD62F5E67CF2A6EF2FDF448A181EF9 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E702A93151A62BDB285052984ECEB3D7 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3239B74D884AED7E7E2F890A7B44AC /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E8D2B06760AD270146CF0C5CB07E2043 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1D374A36FE86F3221A30049AD2C436 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F16121D2DC5CE0C8BFF518373D21DF1B /* TYVideoResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 13701C21280B6B68B873C23E4BAE03DB /* TYVideoResourceLoader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F266EB05CCB89275989DCC9BD5E1298A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD619A815BAE176963CE4532E60BDAC /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2ED82687D7437ECE88A42345E550C5B /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 029D4291A877027B28747711601FF894 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F377AB64B571A2033CFD0EA1F143B0A3 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 377DE6DA8233E3FA54C548A836BBDAF9 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F77A98AAE0F31A1B956F0985CA0298F0 /* TYVideoDiskCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A12AE6CCA6147C1C419E09DD611D5A26 /* TYVideoDiskCacheProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA7DF68B442CF074FDCD6FACAB5EA459 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FEC13CE323FE2E3A51431C81570B1F /* SDWebImage-dummy.m */; };
+		FAEA25084086246C0D2DBC11DF6CBA61 /* TYVideoCacheRequestTask.h in Headers */ = {isa = PBXBuildFile; fileRef = D53552E5E4A7C9CB2159B3CDFA76020E /* TYVideoCacheRequestTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FCD64586536B2C1974F92ACAF8447ACD /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = EF1723661A762B9C742582F22EF17B8C /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE4AAE20771B50055D8A7421BB1B37FF /* TYVideoResourceDeallocManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD7F29DE6726C53DA4E1BC2EA866B96 /* TYVideoResourceDeallocManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FEA625EA526CE295F6FB0B01B296849E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8321E21FC2F1489981CB72996AD449 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		504188E546A7D5F3A0518F4498364E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 387BFCEDD45477A13D96F901BA3C4299;
+			remoteInfo = SDWebImage;
+		};
+		C285DC36FA72C695FA756D4C1380A7AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A42EA465E764DD959C829C51404C08;
+			remoteInfo = Masonry;
+		};
+		C6F218E792D69B3A09AE6A1A69F3F158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D8F3819C68B242232A84FC6AFF41C45;
+			remoteInfo = TYVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029D4291A877027B28747711601FF894 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		06BDB71C81C1DC313D0FD6CC9D33C2CE /* TYVideoPlayerManger+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYVideoPlayerManger+Private.h"; sourceTree = "<group>"; };
+		09617D0F35ACDFA87499330DA2F55868 /* TYVideoPrefetchTaskManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPrefetchTaskManager.h; sourceTree = "<group>"; };
+		0ABB916ECAD303EDD9A63FD26D7E9A11 /* TYVideoPlayerEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPlayerEnum.h; sourceTree = "<group>"; };
+		1103C5C6FE9ADA37C509CF6973B1E4C9 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		12DC75545C630734634E5ECC683347D3 /* TYVideoDiskCacheConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoDiskCacheConfiguration.m; sourceTree = "<group>"; };
+		132C94D3863795B73124FE8D422F6C3D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		13701C21280B6B68B873C23E4BAE03DB /* TYVideoResourceLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoResourceLoader.m; sourceTree = "<group>"; };
+		14E56E4CBBDABDE781DDBEDA953D2230 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		16CD62F5E67CF2A6EF2FDF448A181EF9 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		172EB13D888941A662E7EA117F3A4B8F /* TYURLTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYURLTransformer.m; sourceTree = "<group>"; };
+		199031E1716F52B7452C97812A94CB7C /* Pods-TYVideoPlayerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYVideoPlayerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		1B58DF5A9A4D28D026BE74AFBAD9DDB5 /* TYVideoDiskCacheConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoDiskCacheConfiguration.h; sourceTree = "<group>"; };
+		1BCE0E803DE8B0C9A4F0A1058307D684 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		1BD619A815BAE176963CE4532E60BDAC /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		1D87AB0E8E642B10D751AEFCE00470EC /* TYVideoDiskCacheDeleteManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoDiskCacheDeleteManager.h; sourceTree = "<group>"; };
+		1EFA0CD641F2198D2FAAA32F21918149 /* TYVideoPrefetchTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoPrefetchTask.m; sourceTree = "<group>"; };
+		1F4C7A6D038296058B17607718D9C4DD /* TYVideoPlayerNetworkDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPlayerNetworkDelegate.h; sourceTree = "<group>"; };
+		1F4F18F53C92CABA31ECD2EF26F07951 /* TYVideoDiskCacheFileHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoDiskCacheFileHandle.h; sourceTree = "<group>"; };
+		2001EA1592F51F6652778697C14AF860 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		20DACA137FE1D94AF52852AF4E5164C8 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		22E9D0040769540FFE45F2E9F6B9A56D /* TYVideoResourceDeallocManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoResourceDeallocManager.h; sourceTree = "<group>"; };
+		269195D4D86726F1C3BC7B214FA81E9A /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		2724F19D239ED7EE6C1413FED6234B9B /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		2A8B349D99C61501A099836DE7174F4B /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		2C4B827FF2C4CFCDFD5E986DB79590DC /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		2D76599D9D0F32B4AEDB2736CD0E5566 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		32BD9D5A3FF68C861674BD59F800D0B6 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		364493F4789B941EFC270AD0A48F74C1 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		36CC35E55CF685BCA34DEE786A51C3EB /* TYVideoObjectPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoObjectPool.m; sourceTree = "<group>"; };
+		377DE6DA8233E3FA54C548A836BBDAF9 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		389ED152BA01F595F6CAE1FAA599B192 /* libPods-TYVideoPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYVideoPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D39C36599B2AF09089EAB247EDE45B /* TYVideoPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYVideoPlayer-dummy.m"; sourceTree = "<group>"; };
+		3D1C8DDFC0076920AAE113A2E25A8454 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		3DAA21A237989DFFDB0371AD3D7F076F /* Pods-TYVideoPlayerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYVideoPlayerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FE5EE7CA80CACCEDF0402B70C79B36D /* TYVideoPlayerDefines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoPlayerDefines.m; sourceTree = "<group>"; };
+		408596FC83B697FD9D51680CE344046B /* TYVideoPrefetchHitRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPrefetchHitRecorder.h; sourceTree = "<group>"; };
+		4121749FFBE3FADE703B26D68E3AA2C4 /* TYVideoDiskCacheFileHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoDiskCacheFileHandle.m; sourceTree = "<group>"; };
+		4125AA55A6F056F1DC4A27319178CA41 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		4179A9EA206056428C0C5AC09BFD6C6A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		45838C1EA9BA66C562DD89D87D8E562C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		4BE627891CCD82AD1A5973CE9779659C /* TYVideoPlayerManger+Public.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYVideoPlayerManger+Public.h"; sourceTree = "<group>"; };
+		50F2CF4C006F1AEB806BEAE5E3874300 /* Pods-TYVideoPlayerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TYVideoPlayerDemo-dummy.m"; sourceTree = "<group>"; };
+		511B4C0EDC384F0B076B83C01B16A64A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53A560B19AE4F0DFD40374135F3BFB5C /* TYVideoResourceLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoResourceLoader.h; sourceTree = "<group>"; };
+		5BB8666144F9D0F7E45E10C5C322969F /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		5FF80CE53CC2F88A7B75E76A8FC7E4CD /* TYVideoDiskCacheManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoDiskCacheManger.h; sourceTree = "<group>"; };
+		60B2FECC4E1819F4B3ADDDDD9707ED7A /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		616B9F688FE23B72E150A75F24F77A09 /* TYVideoDiskCacheManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoDiskCacheManger.m; sourceTree = "<group>"; };
+		66930C6D5EA7BEE644A3B28F62EDD7DA /* TYVideoCachePlayTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoCachePlayTask.m; sourceTree = "<group>"; };
+		67A549A9BE4C478D5DCD8708E840131A /* TYVideoPlayerManger+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYVideoPlayerManger+Private.m"; sourceTree = "<group>"; };
+		6E33D4DDA12361170642CB50F2ACB58F /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		718D1B61FCFFCD485A6EFFFBD4A14415 /* TYVideoPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYVideoPlayer-prefix.pch"; sourceTree = "<group>"; };
+		73303C1592DCF6353444AE332DF6DDB0 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		7452F5B6064E3486C06D43CB9F23B0B9 /* TYVideoPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYVideoPlayer.h; path = TYVideoPlayer/Classes/TYVideoPlayer.h; sourceTree = "<group>"; };
+		77185A6E247AF758CA43C1226315D0A3 /* TYVideoCachePrefetchTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoCachePrefetchTask.m; sourceTree = "<group>"; };
+		78F44BD255E50D0FD6BC9B653A045242 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		7DEE5851969BE5CBE3D443ABFDE03E75 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		812AEC9B4D71C634BBFDA7CE400419DC /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		867034E590AFE0E10D31589402AD68B4 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		88D50F9C411424DB4FCBADC404D78801 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		88EC260FCAEDFAE9C78B08657A81FC61 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		8CE4A4C701F179C4ED5FEB4D9548EA69 /* TYVideoPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPlayerView.h; sourceTree = "<group>"; };
+		8D26F8FBA9A2610B479BB88D173365FA /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		91397F3423B14324EBDEFCEBD9FEA48D /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950DF4B0FB63EC566AF37820C1D2E95B /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		95FC5BC767D408340BB495B8C20DB27C /* TYVideoPrefetchTaskManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoPrefetchTaskManager.m; sourceTree = "<group>"; };
+		9B198A8D02B8FFA091794D0DF10CC3B8 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		9CA3EF42B30E8BEB4C7D2DE75A3897A6 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		9F3AEDC96431BBB40293C46010E7F342 /* TYVideoPrefetchTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPrefetchTask.h; sourceTree = "<group>"; };
+		9FD7F29DE6726C53DA4E1BC2EA866B96 /* TYVideoResourceDeallocManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoResourceDeallocManager.m; sourceTree = "<group>"; };
+		A12AE6CCA6147C1C419E09DD611D5A26 /* TYVideoDiskCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoDiskCacheProtocol.h; sourceTree = "<group>"; };
+		A292B52AAE7B735A813EAC56A696600F /* Pods-TYVideoPlayerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYVideoPlayerDemo-resources.sh"; sourceTree = "<group>"; };
+		A6821D08866E3C8531C416F0A71A0EBB /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		A7D5D26A0DCE496C7B2E3CD7D4967CCB /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
+		A8FEC13CE323FE2E3A51431C81570B1F /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		ABF9EC1908FC13BA899BE7BC1AFF136A /* TYVideoCacheRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoCacheRequestDelegate.h; sourceTree = "<group>"; };
+		ADC39FBFAC66081D7A66F4A645BCDDB8 /* TYVideoPlayerManageDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPlayerManageDelegate.h; sourceTree = "<group>"; };
+		B057DFB609BD5B70A0159E03AE4923A2 /* TYVideoObjectPool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoObjectPool.h; sourceTree = "<group>"; };
+		B1B0A251641AA0FAF060C6771D43F5FD /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		B292C39A385CECEEDCC37271C481B112 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		B580A3E20A15C83EA2EE5869D1A29087 /* libTYVideoPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTYVideoPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9220B665C40DF98DFE0AD381F0F8258 /* TYVideoDiskCacheDeleteManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoDiskCacheDeleteManager.m; sourceTree = "<group>"; };
+		BA2662D1BE06B5B751C4E2DD228BC8D9 /* TYVideoPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoPlayerView.m; sourceTree = "<group>"; };
+		BC1853E19CEBB0F913DA3E191982D616 /* TYVideoPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = TYVideoPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC1D374A36FE86F3221A30049AD2C436 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		C0B4C7FF12E1972B6EF35520F863C084 /* Pods-TYVideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYVideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C4495856B313A2BA98B523D751477F42 /* TYVideoCachePlayTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoCachePlayTask.h; sourceTree = "<group>"; };
+		C5FE30821CE63EBD8D015CD92B664BA1 /* TYVideoNetWorkRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoNetWorkRequestDelegate.h; sourceTree = "<group>"; };
+		C6EFB4A74B38E895F2E80141D3ABA1EB /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		CA3ACBEA528A0E327BCBF4F12B150AFB /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		CB972B4096D34E5E1C20AB63951C292F /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		CCB8AE93717F5923BAD68304D7F33F87 /* TYVideoCachePrefetchTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoCachePrefetchTask.h; sourceTree = "<group>"; };
+		CCD4EC79A8966E89A22BC20DA5BE2547 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		CEBC9BE453EA69C6CADC7CD08B3019EC /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		D013F2FD214F948500E4FA09 /* TYVideoPlayerManger+Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYVideoPlayerManger+Error.h"; sourceTree = "<group>"; };
+		D013F2FE214F948500E4FA09 /* TYVideoPlayerManger+Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TYVideoPlayerManger+Error.m"; sourceTree = "<group>"; };
+		D1A905CDB859509AD1F9A1BB9F4BEEB7 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		D53552E5E4A7C9CB2159B3CDFA76020E /* TYVideoCacheRequestTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoCacheRequestTask.h; sourceTree = "<group>"; };
+		D5D1E632A297900AE29E3DE3D681275B /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6BF447F762A19B107B9C300B98449EC /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		DBC1B5C617DB0842B54E8CAD57A58D94 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		DC367098ABC943AE5B1E3F06D6CF1AB9 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		DF2313B4B17CCAE56A946585EDA95404 /* TYVideoPrefetchHitRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoPrefetchHitRecorder.m; sourceTree = "<group>"; };
+		E0B8E9360B71CC416DB172B88622C7F8 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		E155B381B44F872E14118C7BC107675B /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		E178C2BD9ADE0E9FBC2142039EC53348 /* TYURLTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYURLTransformer.h; sourceTree = "<group>"; };
+		E2C045CCA3DC0ED6D3BD9D8AD04F90E0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E2E6B7EFBC00DE250B9BA19E59A6083E /* Pods-TYVideoPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYVideoPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E47536A9E9A6617772E0F1CDEC2DA46B /* TYVideoLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoLogger.h; sourceTree = "<group>"; };
+		E4BAB82E15D2A7501BB9B32A230E631D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		E9B00DB9BBBA49B90C30C25762EF2FFD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EADFB4956010628944C2B2BCD49BA196 /* TYVideoPlayerManger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPlayerManger.h; sourceTree = "<group>"; };
+		EB76871ED5A8B242247E2F2AFBDB3B3D /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		EBB2B049CA32FEE94B7E954422308084 /* TYVideoPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYVideoPlayer.xcconfig; sourceTree = "<group>"; };
+		ED3239B74D884AED7E7E2F890A7B44AC /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		ED8179818279A7DFCAA0E8FDBDE02525 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		EE3325100DD0C97A986AC74243C12456 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		EF1723661A762B9C742582F22EF17B8C /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		EF475DD486B992E5CA921CFD0EA6C8D4 /* TYVideoPlayerDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TYVideoPlayerDefines.h; sourceTree = "<group>"; };
+		F3C3F06DB0EF3CAA964C89D66047D595 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		F496FF0A1ACE3FB4E31C3AD986EA873A /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		F58D3D4EF5A80199BAE613449DB45972 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		F60A2EFB492B0B833B4557E84BA4ACB2 /* Pods-TYVideoPlayerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYVideoPlayerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F82F6BA3D38519E5CEBD9380AF4F9370 /* TYVideoPlayerManger+Public.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYVideoPlayerManger+Public.m"; sourceTree = "<group>"; };
+		F8E935A5E74D0E989F7EBF3D15B5C94B /* TYVideoPlayerManger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoPlayerManger.m; sourceTree = "<group>"; };
+		FD5EE9ABC3608206C30BC995E06DD0B5 /* TYVideoCacheRequestTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TYVideoCacheRequestTask.m; sourceTree = "<group>"; };
+		FE8321E21FC2F1489981CB72996AD449 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		394BE9CF8AF7B1D8F1FF4EE9E71EB50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED7835E195AAB6209FBE3C828860916 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA6A456CD6F8D3C923347BE1089D23A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42539E4A025719475323294489A7BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E4137647205447C5DF46DF03B844F0 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95ADA1C4EF2FA5FF4EEC54DD65EAA3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699096520CABA15A0196609EAA54D366 /* Foundation.framework in Frameworks */,
+				44081CCF462AE437F36222476DDA9816 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C325A7AD5ED673C0DA99F2284B712A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				950DF4B0FB63EC566AF37820C1D2E95B /* NSData+ImageContentType.h */,
+				D1A905CDB859509AD1F9A1BB9F4BEEB7 /* NSData+ImageContentType.m */,
+				9B198A8D02B8FFA091794D0DF10CC3B8 /* SDImageCache.h */,
+				ED8179818279A7DFCAA0E8FDBDE02525 /* SDImageCache.m */,
+				029D4291A877027B28747711601FF894 /* SDWebImageCompat.h */,
+				D6BF447F762A19B107B9C300B98449EC /* SDWebImageCompat.m */,
+				CA3ACBEA528A0E327BCBF4F12B150AFB /* SDWebImageDecoder.h */,
+				6E33D4DDA12361170642CB50F2ACB58F /* SDWebImageDecoder.m */,
+				F58D3D4EF5A80199BAE613449DB45972 /* SDWebImageDownloader.h */,
+				EB76871ED5A8B242247E2F2AFBDB3B3D /* SDWebImageDownloader.m */,
+				3D1C8DDFC0076920AAE113A2E25A8454 /* SDWebImageDownloaderOperation.h */,
+				4125AA55A6F056F1DC4A27319178CA41 /* SDWebImageDownloaderOperation.m */,
+				CB972B4096D34E5E1C20AB63951C292F /* SDWebImageManager.h */,
+				2C4B827FF2C4CFCDFD5E986DB79590DC /* SDWebImageManager.m */,
+				364493F4789B941EFC270AD0A48F74C1 /* SDWebImageOperation.h */,
+				B1B0A251641AA0FAF060C6771D43F5FD /* SDWebImagePrefetcher.h */,
+				20DACA137FE1D94AF52852AF4E5164C8 /* SDWebImagePrefetcher.m */,
+				16CD62F5E67CF2A6EF2FDF448A181EF9 /* UIButton+WebCache.h */,
+				2D76599D9D0F32B4AEDB2736CD0E5566 /* UIButton+WebCache.m */,
+				269195D4D86726F1C3BC7B214FA81E9A /* UIImage+GIF.h */,
+				FE8321E21FC2F1489981CB72996AD449 /* UIImage+GIF.m */,
+				867034E590AFE0E10D31589402AD68B4 /* UIImage+MultiFormat.h */,
+				2A8B349D99C61501A099836DE7174F4B /* UIImage+MultiFormat.m */,
+				C6EFB4A74B38E895F2E80141D3ABA1EB /* UIImageView+HighlightedWebCache.h */,
+				DBC1B5C617DB0842B54E8CAD57A58D94 /* UIImageView+HighlightedWebCache.m */,
+				1103C5C6FE9ADA37C509CF6973B1E4C9 /* UIImageView+WebCache.h */,
+				E0B8E9360B71CC416DB172B88622C7F8 /* UIImageView+WebCache.m */,
+				132C94D3863795B73124FE8D422F6C3D /* UIView+WebCacheOperation.h */,
+				ED3239B74D884AED7E7E2F890A7B44AC /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0C32BBA346ADB0667DF9D513796E5BE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E155B381B44F872E14118C7BC107675B /* SDWebImage.xcconfig */,
+				A8FEC13CE323FE2E3A51431C81570B1F /* SDWebImage-dummy.m */,
+				B292C39A385CECEEDCC37271C481B112 /* SDWebImage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64498B6C068A7D05E7858530681FDF2F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D6A18F557EF6B440A476CC4AC14ED5F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C4495856B313A2BA98B523D751477F42 /* TYVideoCachePlayTask.h */,
+				66930C6D5EA7BEE644A3B28F62EDD7DA /* TYVideoCachePlayTask.m */,
+				D53552E5E4A7C9CB2159B3CDFA76020E /* TYVideoCacheRequestTask.h */,
+				FD5EE9ABC3608206C30BC995E06DD0B5 /* TYVideoCacheRequestTask.m */,
+				C5FE30821CE63EBD8D015CD92B664BA1 /* TYVideoNetWorkRequestDelegate.h */,
+			);
+			name = Network;
+			path = TYVideoPlayer/Classes/Network;
+			sourceTree = "<group>";
+		};
+		2B2A2B8E4F359954993E20945B225E12 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6821D08866E3C8531C416F0A71A0EBB /* NSTimer+BlocksKit.h */,
+				A7D5D26A0DCE496C7B2E3CD7D4967CCB /* NSTimer+BlocksKit.m */,
+				E178C2BD9ADE0E9FBC2142039EC53348 /* TYURLTransformer.h */,
+				172EB13D888941A662E7EA117F3A4B8F /* TYURLTransformer.m */,
+				E47536A9E9A6617772E0F1CDEC2DA46B /* TYVideoLogger.h */,
+				B057DFB609BD5B70A0159E03AE4923A2 /* TYVideoObjectPool.h */,
+				36CC35E55CF685BCA34DEE786A51C3EB /* TYVideoObjectPool.m */,
+				EF475DD486B992E5CA921CFD0EA6C8D4 /* TYVideoPlayerDefines.h */,
+				3FE5EE7CA80CACCEDF0402B70C79B36D /* TYVideoPlayerDefines.m */,
+				22E9D0040769540FFE45F2E9F6B9A56D /* TYVideoResourceDeallocManager.h */,
+				9FD7F29DE6726C53DA4E1BC2EA866B96 /* TYVideoResourceDeallocManager.m */,
+			);
+			name = utils;
+			path = TYVideoPlayer/Classes/utils;
+			sourceTree = "<group>";
+		};
+		2D604EE213B0AA075208724A06F9A848 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				E4BAB82E15D2A7501BB9B32A230E631D /* MASCompositeConstraint.h */,
+				88EC260FCAEDFAE9C78B08657A81FC61 /* MASCompositeConstraint.m */,
+				2001EA1592F51F6652778697C14AF860 /* MASConstraint.h */,
+				78F44BD255E50D0FD6BC9B653A045242 /* MASConstraint.m */,
+				F496FF0A1ACE3FB4E31C3AD986EA873A /* MASConstraint+Private.h */,
+				EF1723661A762B9C742582F22EF17B8C /* MASConstraintMaker.h */,
+				9CA3EF42B30E8BEB4C7D2DE75A3897A6 /* MASConstraintMaker.m */,
+				88D50F9C411424DB4FCBADC404D78801 /* MASLayoutConstraint.h */,
+				812AEC9B4D71C634BBFDA7CE400419DC /* MASLayoutConstraint.m */,
+				5BB8666144F9D0F7E45E10C5C322969F /* Masonry.h */,
+				BC1D374A36FE86F3221A30049AD2C436 /* MASUtilities.h */,
+				2724F19D239ED7EE6C1413FED6234B9B /* MASViewAttribute.h */,
+				377DE6DA8233E3FA54C548A836BBDAF9 /* MASViewAttribute.m */,
+				7DEE5851969BE5CBE3D443ABFDE03E75 /* MASViewConstraint.h */,
+				EE3325100DD0C97A986AC74243C12456 /* MASViewConstraint.m */,
+				32BD9D5A3FF68C861674BD59F800D0B6 /* NSArray+MASAdditions.h */,
+				1BCE0E803DE8B0C9A4F0A1058307D684 /* NSArray+MASAdditions.m */,
+				8D26F8FBA9A2610B479BB88D173365FA /* NSArray+MASShorthandAdditions.h */,
+				E2C045CCA3DC0ED6D3BD9D8AD04F90E0 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				1BD619A815BAE176963CE4532E60BDAC /* NSLayoutConstraint+MASDebugAdditions.m */,
+				CEBC9BE453EA69C6CADC7CD08B3019EC /* View+MASAdditions.h */,
+				DC367098ABC943AE5B1E3F06D6CF1AB9 /* View+MASAdditions.m */,
+				E9B00DB9BBBA49B90C30C25762EF2FFD /* View+MASShorthandAdditions.h */,
+				F3C3F06DB0EF3CAA964C89D66047D595 /* ViewController+MASAdditions.h */,
+				45838C1EA9BA66C562DD89D87D8E562C /* ViewController+MASAdditions.m */,
+				4F303F320C9EF476AEF43CCEDA506878 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		4F303F320C9EF476AEF43CCEDA506878 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91397F3423B14324EBDEFCEBD9FEA48D /* Masonry.xcconfig */,
+				CCD4EC79A8966E89A22BC20DA5BE2547 /* Masonry-dummy.m */,
+				73303C1592DCF6353444AE332DF6DDB0 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		630BB8ACBDEFBE160C28F6F6970ABC77 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				0ABB916ECAD303EDD9A63FD26D7E9A11 /* TYVideoPlayerEnum.h */,
+				ADC39FBFAC66081D7A66F4A645BCDDB8 /* TYVideoPlayerManageDelegate.h */,
+				EADFB4956010628944C2B2BCD49BA196 /* TYVideoPlayerManger.h */,
+				F8E935A5E74D0E989F7EBF3D15B5C94B /* TYVideoPlayerManger.m */,
+				06BDB71C81C1DC313D0FD6CC9D33C2CE /* TYVideoPlayerManger+Private.h */,
+				67A549A9BE4C478D5DCD8708E840131A /* TYVideoPlayerManger+Private.m */,
+				4BE627891CCD82AD1A5973CE9779659C /* TYVideoPlayerManger+Public.h */,
+				F82F6BA3D38519E5CEBD9380AF4F9370 /* TYVideoPlayerManger+Public.m */,
+				1F4C7A6D038296058B17607718D9C4DD /* TYVideoPlayerNetworkDelegate.h */,
+				8CE4A4C701F179C4ED5FEB4D9548EA69 /* TYVideoPlayerView.h */,
+				BA2662D1BE06B5B751C4E2DD228BC8D9 /* TYVideoPlayerView.m */,
+				53A560B19AE4F0DFD40374135F3BFB5C /* TYVideoResourceLoader.h */,
+				13701C21280B6B68B873C23E4BAE03DB /* TYVideoResourceLoader.m */,
+				D013F2FD214F948500E4FA09 /* TYVideoPlayerManger+Error.h */,
+				D013F2FE214F948500E4FA09 /* TYVideoPlayerManger+Error.m */,
+			);
+			name = player;
+			path = TYVideoPlayer/Classes/player;
+			sourceTree = "<group>";
+		};
+		64498B6C068A7D05E7858530681FDF2F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				511B4C0EDC384F0B076B83C01B16A64A /* Foundation.framework */,
+				4179A9EA206056428C0C5AC09BFD6C6A /* ImageIO.framework */,
+				14E56E4CBBDABDE781DDBEDA953D2230 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		71B232F8F20CE5A4352F38CE479E6A97 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE2551AE39CF2E634D7B00397AD04FF9 /* TYVideoPlayer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		722AA381A9C057D512738921B1378642 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D604EE213B0AA075208724A06F9A848 /* Masonry */,
+				C2C25DC20E2442282E8E97253E6368F9 /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				71B232F8F20CE5A4352F38CE479E6A97 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				722AA381A9C057D512738921B1378642 /* Pods */,
+				EF571D54B19FA6FBA281C7C22764DDF0 /* Products */,
+				927899240DF139020EBD57D97120C811 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB9E69A52CCD83D495FC78CB0795756 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2B049CA32FEE94B7E954422308084 /* TYVideoPlayer.xcconfig */,
+				39D39C36599B2AF09089EAB247EDE45B /* TYVideoPlayer-dummy.m */,
+				718D1B61FCFFCD485A6EFFFBD4A14415 /* TYVideoPlayer-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "TYVideoPlayerDemo/Pods/Target Support Files/TYVideoPlayer";
+			sourceTree = "<group>";
+		};
+		927899240DF139020EBD57D97120C811 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC875534F84519E4EE61AB01601B0F28 /* Pods-TYVideoPlayerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A4EC05CDC0CF849CBB81683839C5816B /* cacheFlie */ = {
+			isa = PBXGroup;
+			children = (
+				ABF9EC1908FC13BA899BE7BC1AFF136A /* TYVideoCacheRequestDelegate.h */,
+				1B58DF5A9A4D28D026BE74AFBAD9DDB5 /* TYVideoDiskCacheConfiguration.h */,
+				12DC75545C630734634E5ECC683347D3 /* TYVideoDiskCacheConfiguration.m */,
+				1D87AB0E8E642B10D751AEFCE00470EC /* TYVideoDiskCacheDeleteManager.h */,
+				B9220B665C40DF98DFE0AD381F0F8258 /* TYVideoDiskCacheDeleteManager.m */,
+				1F4F18F53C92CABA31ECD2EF26F07951 /* TYVideoDiskCacheFileHandle.h */,
+				4121749FFBE3FADE703B26D68E3AA2C4 /* TYVideoDiskCacheFileHandle.m */,
+				5FF80CE53CC2F88A7B75E76A8FC7E4CD /* TYVideoDiskCacheManger.h */,
+				616B9F688FE23B72E150A75F24F77A09 /* TYVideoDiskCacheManger.m */,
+				A12AE6CCA6147C1C419E09DD611D5A26 /* TYVideoDiskCacheProtocol.h */,
+			);
+			name = cacheFlie;
+			path = TYVideoPlayer/Classes/cacheFlie;
+			sourceTree = "<group>";
+		};
+		C2C25DC20E2442282E8E97253E6368F9 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				09C325A7AD5ED673C0DA99F2284B712A /* Core */,
+				0C32BBA346ADB0667DF9D513796E5BE5 /* Support Files */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		C552BD6FC8DF6C6A4A62C340F650312A /* Prefetch */ = {
+			isa = PBXGroup;
+			children = (
+				CCB8AE93717F5923BAD68304D7F33F87 /* TYVideoCachePrefetchTask.h */,
+				77185A6E247AF758CA43C1226315D0A3 /* TYVideoCachePrefetchTask.m */,
+				408596FC83B697FD9D51680CE344046B /* TYVideoPrefetchHitRecorder.h */,
+				DF2313B4B17CCAE56A946585EDA95404 /* TYVideoPrefetchHitRecorder.m */,
+				9F3AEDC96431BBB40293C46010E7F342 /* TYVideoPrefetchTask.h */,
+				1EFA0CD641F2198D2FAAA32F21918149 /* TYVideoPrefetchTask.m */,
+				09617D0F35ACDFA87499330DA2F55868 /* TYVideoPrefetchTaskManager.h */,
+				95FC5BC767D408340BB495B8C20DB27C /* TYVideoPrefetchTaskManager.m */,
+			);
+			name = Prefetch;
+			path = TYVideoPlayer/Classes/Prefetch;
+			sourceTree = "<group>";
+		};
+		DE2551AE39CF2E634D7B00397AD04FF9 /* TYVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7452F5B6064E3486C06D43CB9F23B0B9 /* TYVideoPlayer.h */,
+				A4EC05CDC0CF849CBB81683839C5816B /* cacheFlie */,
+				1D6A18F557EF6B440A476CC4AC14ED5F /* Network */,
+				630BB8ACBDEFBE160C28F6F6970ABC77 /* player */,
+				FACCE89DA0809935DF23C6531FAE02CE /* Pod */,
+				C552BD6FC8DF6C6A4A62C340F650312A /* Prefetch */,
+				8FB9E69A52CCD83D495FC78CB0795756 /* Support Files */,
+				2B2A2B8E4F359954993E20945B225E12 /* utils */,
+			);
+			name = TYVideoPlayer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EF571D54B19FA6FBA281C7C22764DDF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5D1E632A297900AE29E3DE3D681275B /* libMasonry.a */,
+				389ED152BA01F595F6CAE1FAA599B192 /* libPods-TYVideoPlayerDemo.a */,
+				60B2FECC4E1819F4B3ADDDDD9707ED7A /* libSDWebImage.a */,
+				B580A3E20A15C83EA2EE5869D1A29087 /* libTYVideoPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACCE89DA0809935DF23C6531FAE02CE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BC1853E19CEBB0F913DA3E191982D616 /* TYVideoPlayer.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FC875534F84519E4EE61AB01601B0F28 /* Pods-TYVideoPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3DAA21A237989DFFDB0371AD3D7F076F /* Pods-TYVideoPlayerDemo-acknowledgements.markdown */,
+				F60A2EFB492B0B833B4557E84BA4ACB2 /* Pods-TYVideoPlayerDemo-acknowledgements.plist */,
+				50F2CF4C006F1AEB806BEAE5E3874300 /* Pods-TYVideoPlayerDemo-dummy.m */,
+				199031E1716F52B7452C97812A94CB7C /* Pods-TYVideoPlayerDemo-frameworks.sh */,
+				A292B52AAE7B735A813EAC56A696600F /* Pods-TYVideoPlayerDemo-resources.sh */,
+				E2E6B7EFBC00DE250B9BA19E59A6083E /* Pods-TYVideoPlayerDemo.debug.xcconfig */,
+				C0B4C7FF12E1972B6EF35520F863C084 /* Pods-TYVideoPlayerDemo.release.xcconfig */,
+			);
+			name = "Pods-TYVideoPlayerDemo";
+			path = "Target Support Files/Pods-TYVideoPlayerDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		58ABB7D4261CC5BD0CFF15645539B947 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52E4A8F7904E539018B5FAB53874C1F /* NSData+ImageContentType.h in Headers */,
+				6E942FD81C0F4545C3527C36FE4BB907 /* SDImageCache.h in Headers */,
+				F2ED82687D7437ECE88A42345E550C5B /* SDWebImageCompat.h in Headers */,
+				6FFA6E177AB771D759A07238EDB54702 /* SDWebImageDecoder.h in Headers */,
+				AB6F6A70075BC36C4A2C704651FB38C5 /* SDWebImageDownloader.h in Headers */,
+				5715EB237F6043449E4E799E473791B0 /* SDWebImageDownloaderOperation.h in Headers */,
+				048B9F89E96F753E022881137CA38094 /* SDWebImageManager.h in Headers */,
+				44B2B9FC18A4DC856D17D02F767A8F5A /* SDWebImageOperation.h in Headers */,
+				5587584440CCD5931C3DC8C48836E5B3 /* SDWebImagePrefetcher.h in Headers */,
+				E3090CA06472C3D565C4EE5588964617 /* UIButton+WebCache.h in Headers */,
+				2887295E7F5E35494BBE9ED729F595A0 /* UIImage+GIF.h in Headers */,
+				DD26C25DA2450C3B37A0228DF13CFE47 /* UIImage+MultiFormat.h in Headers */,
+				D5F525DFBB90A7449A7847A51E31EC61 /* UIImageView+HighlightedWebCache.h in Headers */,
+				CE8C9BD112DEBE48EA279947C4948496 /* UIImageView+WebCache.h in Headers */,
+				0F1DBA49E324F83ED1EA6C58D4C39425 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875F787587C4F9EA278589FE6787686A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F27DB01EC92A9768315AA22446CB15 /* NSTimer+BlocksKit.h in Headers */,
+				94792886D9DF6120F6270817EEC2A754 /* TYURLTransformer.h in Headers */,
+				513AD7313570F9F026D4A2ADF26A9F03 /* TYVideoCachePlayTask.h in Headers */,
+				07772D30F4DC9905E74D471C59C80339 /* TYVideoCachePrefetchTask.h in Headers */,
+				28AB47E5CA0B2A1E455B55613239F661 /* TYVideoCacheRequestDelegate.h in Headers */,
+				FAEA25084086246C0D2DBC11DF6CBA61 /* TYVideoCacheRequestTask.h in Headers */,
+				A5098D3E7DE38B42F83E2BA7A9F81652 /* TYVideoDiskCacheConfiguration.h in Headers */,
+				C287C8A924DED60C632046E1B34270F6 /* TYVideoDiskCacheDeleteManager.h in Headers */,
+				7C7D538AF765898EB22C1E06F39EF437 /* TYVideoDiskCacheFileHandle.h in Headers */,
+				DC00CBC7E244A684179B3523830D0A1B /* TYVideoDiskCacheManger.h in Headers */,
+				F77A98AAE0F31A1B956F0985CA0298F0 /* TYVideoDiskCacheProtocol.h in Headers */,
+				D013F2FF214F948500E4FA09 /* TYVideoPlayerManger+Error.h in Headers */,
+				03C6EBF052F4AD00F50DBB7B3E8EBCAF /* TYVideoLogger.h in Headers */,
+				C523B3CC9B72C9EEA2687420387530E8 /* TYVideoNetWorkRequestDelegate.h in Headers */,
+				9DFD7C924BB0A4C085A1DAC375C34ED2 /* TYVideoObjectPool.h in Headers */,
+				1030437A6DDDEDB3F5848C4E6D03E06A /* TYVideoPlayer.h in Headers */,
+				1D9ECC777D46E9AB60E55C52A6285256 /* TYVideoPlayerDefines.h in Headers */,
+				D23043C70E32501E391306C834911684 /* TYVideoPlayerEnum.h in Headers */,
+				8C4F1EBC4F46C39FF03161A2B15ED6D2 /* TYVideoPlayerManageDelegate.h in Headers */,
+				1EF6F0C63CD6B0072DA3BEE2FFE42685 /* TYVideoPlayerManger+Private.h in Headers */,
+				49696D14A9B6D4219E9FA09898645AF2 /* TYVideoPlayerManger+Public.h in Headers */,
+				00E27FF5D7AB583F091F11AE78735475 /* TYVideoPlayerManger.h in Headers */,
+				B2023AB35A6416DAA4EEC659148DA724 /* TYVideoPlayerNetworkDelegate.h in Headers */,
+				CC338225AE745B26534C73435E297794 /* TYVideoPlayerView.h in Headers */,
+				167E94E3ADF2EC4DD776139B63CA26CA /* TYVideoPrefetchHitRecorder.h in Headers */,
+				20BF8EF883B0E1D0323D0DA620AD47BF /* TYVideoPrefetchTask.h in Headers */,
+				0425EA654C52A25A0EB21E0BB96A2C39 /* TYVideoPrefetchTaskManager.h in Headers */,
+				DB2EE9A45ACEB09019A582AB50B4AD48 /* TYVideoResourceDeallocManager.h in Headers */,
+				9E7293A6B9230B65DC6F56765C42D349 /* TYVideoResourceLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8990EEE1BB31A1D570F04DF35DD765DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7157D66DCE09397047A7ECF10F15DCBF /* MASCompositeConstraint.h in Headers */,
+				B5BE571A0725C4506001C206FB69C2F7 /* MASConstraint+Private.h in Headers */,
+				1EC8595D0E176DB06815789B6F7E35C1 /* MASConstraint.h in Headers */,
+				FCD64586536B2C1974F92ACAF8447ACD /* MASConstraintMaker.h in Headers */,
+				59E460AA853038A50B89ED33CC615FB4 /* MASLayoutConstraint.h in Headers */,
+				B4BEBC36B586556BFDEDDB9F6D669239 /* Masonry.h in Headers */,
+				E8D2B06760AD270146CF0C5CB07E2043 /* MASUtilities.h in Headers */,
+				049B460E1DDF110E868627655CE0ADEA /* MASViewAttribute.h in Headers */,
+				7FE1C36A12C885ECCD858E05C3685AF5 /* MASViewConstraint.h in Headers */,
+				0BED362262BF36B8F775BC5810DD7EDE /* NSArray+MASAdditions.h in Headers */,
+				C0953168C5916BF83D7C7BDE01A2A300 /* NSArray+MASShorthandAdditions.h in Headers */,
+				2AF8E8005BF2A4EBAC866F0A1AF5975C /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				ADB022A853D74C0A9F48BC16D4EA59CF /* View+MASAdditions.h in Headers */,
+				2A6EEFDF3EE2BBBF63F6063C3F6747A1 /* View+MASShorthandAdditions.h in Headers */,
+				9B5D721633B82BF8FE44D1A435434DF9 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF28A627D85FDF669E83E93A22B97751 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		387BFCEDD45477A13D96F901BA3C4299 /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3458D6AD4606306099AEBC5B74CED1D /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				58ABB7D4261CC5BD0CFF15645539B947 /* Headers */,
+				DCFAD40EE677322484B41917401996D4 /* Sources */,
+				B42539E4A025719475323294489A7BA4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = 60B2FECC4E1819F4B3ADDDDD9707ED7A /* libSDWebImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		40A42EA465E764DD959C829C51404C08 /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB00DFDEF804FAD5E3E20BC782ADAB8 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				8990EEE1BB31A1D570F04DF35DD765DD /* Headers */,
+				0BBEA2D1211910342E3451BD286A3FBD /* Sources */,
+				C95ADA1C4EF2FA5FF4EEC54DD65EAA3C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = D5D1E632A297900AE29E3DE3D681275B /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5D8F3819C68B242232A84FC6AFF41C45 /* TYVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503974B598EA571675BD8FEEC8534894 /* Build configuration list for PBXNativeTarget "TYVideoPlayer" */;
+			buildPhases = (
+				875F787587C4F9EA278589FE6787686A /* Headers */,
+				A2D30B83731597BE15FEA45D1535801D /* Sources */,
+				394BE9CF8AF7B1D8F1FF4EE9E71EB50B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYVideoPlayer;
+			productName = TYVideoPlayer;
+			productReference = B580A3E20A15C83EA2EE5869D1A29087 /* libTYVideoPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EFAEF8F8592CCCBCE53DD6A14F9D757B /* Pods-TYVideoPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657C9EB86C8E588D850684E7DEDED40D /* Build configuration list for PBXNativeTarget "Pods-TYVideoPlayerDemo" */;
+			buildPhases = (
+				AF28A627D85FDF669E83E93A22B97751 /* Headers */,
+				403E255CE15D85538E4DE95584DAD11E /* Sources */,
+				9AA6A456CD6F8D3C923347BE1089D23A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B234F1362B4536A745DDEA3FD3BE0439 /* PBXTargetDependency */,
+				26588E11698A9131BAFF1152A16C6B17 /* PBXTargetDependency */,
+				B55FB38E7424DDF34A171FE722526A97 /* PBXTargetDependency */,
+			);
+			name = "Pods-TYVideoPlayerDemo";
+			productName = "Pods-TYVideoPlayerDemo";
+			productReference = 389ED152BA01F595F6CAE1FAA599B192 /* libPods-TYVideoPlayerDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EF571D54B19FA6FBA281C7C22764DDF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A42EA465E764DD959C829C51404C08 /* Masonry */,
+				EFAEF8F8592CCCBCE53DD6A14F9D757B /* Pods-TYVideoPlayerDemo */,
+				387BFCEDD45477A13D96F901BA3C4299 /* SDWebImage */,
+				5D8F3819C68B242232A84FC6AFF41C45 /* TYVideoPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BBEA2D1211910342E3451BD286A3FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FCAC5BCD9B8CFA2E5948422CD4DDAE /* MASCompositeConstraint.m in Sources */,
+				1FF3C6D64DA9D85BD75F8E93DA3E1F7B /* MASConstraint.m in Sources */,
+				6041930BC3BF26EBD7A74CB5CD895FC2 /* MASConstraintMaker.m in Sources */,
+				026D162622B576A26AF373A66B029492 /* MASLayoutConstraint.m in Sources */,
+				8FD9748C3ED58A0EE65630E95CB18248 /* Masonry-dummy.m in Sources */,
+				F377AB64B571A2033CFD0EA1F143B0A3 /* MASViewAttribute.m in Sources */,
+				8A01A000B10510D4424E44781AC03814 /* MASViewConstraint.m in Sources */,
+				4E3EDE82137478F4649D7313AEF21240 /* NSArray+MASAdditions.m in Sources */,
+				F266EB05CCB89275989DCC9BD5E1298A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				322066CFEAD1FAD9EF0977D87DE8D189 /* View+MASAdditions.m in Sources */,
+				5B3F88A3B323752583AA0CF2998B91F7 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		403E255CE15D85538E4DE95584DAD11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B029651BF1EE1BD0E8A09E2CFF68D0B /* Pods-TYVideoPlayerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D30B83731597BE15FEA45D1535801D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C734C0807C7FB116B865DC06266F98 /* NSTimer+BlocksKit.m in Sources */,
+				0C88070589AF106F6E070A28AED603CC /* TYURLTransformer.m in Sources */,
+				139E4EE5FEE55D9FABB9C14EE39A1A1B /* TYVideoCachePlayTask.m in Sources */,
+				23F10B034D236DE5CDFC44D52E81AF24 /* TYVideoCachePrefetchTask.m in Sources */,
+				74B35EFA8908D0C58DA8DD64B02A5331 /* TYVideoCacheRequestTask.m in Sources */,
+				56CEE969774F2822D45438CD24A7D105 /* TYVideoDiskCacheConfiguration.m in Sources */,
+				D013F300214F948500E4FA09 /* TYVideoPlayerManger+Error.m in Sources */,
+				18A7326855DBC1F30922EDC2BC9EFB3D /* TYVideoDiskCacheDeleteManager.m in Sources */,
+				34416827EF752E3341C5E58A6D391D64 /* TYVideoDiskCacheFileHandle.m in Sources */,
+				0B1597F67551A349C0A04B01F4375437 /* TYVideoDiskCacheManger.m in Sources */,
+				4B1ADE4E807D558D01E86AD815EA706B /* TYVideoObjectPool.m in Sources */,
+				C12F9A73BC60F3EC174B80C80BF89BC3 /* TYVideoPlayer-dummy.m in Sources */,
+				0D0DFF226A21C64CDCA65CEEEF94F31A /* TYVideoPlayerDefines.m in Sources */,
+				3FCD300B10997F819598C597B45D61EE /* TYVideoPlayerManger+Private.m in Sources */,
+				B249D0DC661795BF1C0D5DE7531AAF1B /* TYVideoPlayerManger+Public.m in Sources */,
+				C28C325D69C07519B4C7268ECB11257E /* TYVideoPlayerManger.m in Sources */,
+				BA6E56CC2AFF9D9941327BCAE3338375 /* TYVideoPlayerView.m in Sources */,
+				4945E1A50E35B1C211E354F917987289 /* TYVideoPrefetchHitRecorder.m in Sources */,
+				A755946A04EAAF09C26503450CA061BC /* TYVideoPrefetchTask.m in Sources */,
+				37DD239D9297105B79C8BFC731CFC1A0 /* TYVideoPrefetchTaskManager.m in Sources */,
+				FE4AAE20771B50055D8A7421BB1B37FF /* TYVideoResourceDeallocManager.m in Sources */,
+				F16121D2DC5CE0C8BFF518373D21DF1B /* TYVideoResourceLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFAD40EE677322484B41917401996D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD1C23ED5A63F7B95EE6B1C15D2C2A7 /* NSData+ImageContentType.m in Sources */,
+				E17EFF8EE8AB07813E30DEC230C3983B /* SDImageCache.m in Sources */,
+				FA7DF68B442CF074FDCD6FACAB5EA459 /* SDWebImage-dummy.m in Sources */,
+				1B83201F8B0265DD2B50D58560378798 /* SDWebImageCompat.m in Sources */,
+				652383E6782E5A620B175FC6AF00827D /* SDWebImageDecoder.m in Sources */,
+				84A388A3CBC061E9B51C691687A8C57C /* SDWebImageDownloader.m in Sources */,
+				92B03DE6D045A5C786E6D424F8C06246 /* SDWebImageDownloaderOperation.m in Sources */,
+				C54464389A3DEB20914DD86145BD4447 /* SDWebImageManager.m in Sources */,
+				110457794372355D8F19E352F45A1A2E /* SDWebImagePrefetcher.m in Sources */,
+				5A6822764ACE360C75766E1EBC5B6F09 /* UIButton+WebCache.m in Sources */,
+				FEA625EA526CE295F6FB0B01B296849E /* UIImage+GIF.m in Sources */,
+				AFAC4AF4D7EB8A13FD84460FBEA050E8 /* UIImage+MultiFormat.m in Sources */,
+				50D7CE30CDC109239664870CF9F3D863 /* UIImageView+HighlightedWebCache.m in Sources */,
+				E15BD23C9F8304D4E93A37A5C21F8F0F /* UIImageView+WebCache.m in Sources */,
+				E702A93151A62BDB285052984ECEB3D7 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26588E11698A9131BAFF1152A16C6B17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 387BFCEDD45477A13D96F901BA3C4299 /* SDWebImage */;
+			targetProxy = 504188E546A7D5F3A0518F4498364E3F /* PBXContainerItemProxy */;
+		};
+		B234F1362B4536A745DDEA3FD3BE0439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 40A42EA465E764DD959C829C51404C08 /* Masonry */;
+			targetProxy = C285DC36FA72C695FA756D4C1380A7AD /* PBXContainerItemProxy */;
+		};
+		B55FB38E7424DDF34A171FE722526A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TYVideoPlayer;
+			target = 5D8F3819C68B242232A84FC6AFF41C45 /* TYVideoPlayer */;
+			targetProxy = C6F218E792D69B3A09AE6A1A69F3F158 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		113BB03D377C912886D15CE8F0699E80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E155B381B44F872E14118C7BC107675B /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		232B91FFBB523CA7A29777F0F0985400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91397F3423B14324EBDEFCEBD9FEA48D /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2966D39B4182B36ADE9D0306C1E3D9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B4C7FF12E1972B6EF35520F863C084 /* Pods-TYVideoPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D07F7B6D91097DC6529F0BA96F694F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91397F3423B14324EBDEFCEBD9FEA48D /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E376C04620673BAE40F6D032B654A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E155B381B44F872E14118C7BC107675B /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		643DF0C4787C0CACE40E2F41410B29B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E6B7EFBC00DE250B9BA19E59A6083E /* Pods-TYVideoPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65525B5AD391E5EA82F6A4992009BDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB2B049CA32FEE94B7E954422308084 /* TYVideoPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TYVideoPlayer/TYVideoPlayer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TYVideoPlayer;
+				PRODUCT_NAME = TYVideoPlayer;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE1755FFBCD56E4F84202C6A1B38DA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB2B049CA32FEE94B7E954422308084 /* TYVideoPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TYVideoPlayer/TYVideoPlayer-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TYVideoPlayer;
+				PRODUCT_NAME = TYVideoPlayer;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E189E16F799384795D3A4D62BA9F34ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F9688F385912A451151A9C66654C80CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E189E16F799384795D3A4D62BA9F34ED /* Debug */,
+				F9688F385912A451151A9C66654C80CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503974B598EA571675BD8FEEC8534894 /* Build configuration list for PBXNativeTarget "TYVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65525B5AD391E5EA82F6A4992009BDDE /* Debug */,
+				AE1755FFBCD56E4F84202C6A1B38DA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		657C9EB86C8E588D850684E7DEDED40D /* Build configuration list for PBXNativeTarget "Pods-TYVideoPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643DF0C4787C0CACE40E2F41410B29B2 /* Debug */,
+				2966D39B4182B36ADE9D0306C1E3D9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB00DFDEF804FAD5E3E20BC782ADAB8 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				232B91FFBB523CA7A29777F0F0985400 /* Debug */,
+				3D07F7B6D91097DC6529F0BA96F694F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3458D6AD4606306099AEBC5B74CED1D /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113BB03D377C912886D15CE8F0699E80 /* Debug */,
+				5E376C04620673BAE40F6D032B654A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -19,6 +19,7 @@
 		D047C3C6214B67C2006CE00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D047C3C4214B67C2006CE00D /* LaunchScreen.storyboard */; };
 		D047C3C9214B67C2006CE00D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D047C3C8214B67C2006CE00D /* main.m */; };
 		D047C3D1214B69B0006CE00D /* TYMainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D047C3D0214B69B0006CE00D /* TYMainTabbarController.m */; };
+		D04BD234214FDC9B0044B268 /* UIView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D04BD233214FDC9B0044B268 /* UIView+Gesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		D047C3C8214B67C2006CE00D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D047C3CF214B69B0006CE00D /* TYMainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYMainTabbarController.h; sourceTree = "<group>"; };
 		D047C3D0214B69B0006CE00D /* TYMainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYMainTabbarController.m; sourceTree = "<group>"; };
+		D04BD232214FDC9B0044B268 /* UIView+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gesture.h"; sourceTree = "<group>"; };
+		D04BD233214FDC9B0044B268 /* UIView+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gesture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 		D047C3B8214B67C0006CE00D /* TYVideoPayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D079724C2150B0A400183078 /* network */,
+				D04BD231214FDC9B0044B268 /* category */,
 				D013F2E8214F622E00E4FA09 /* feed */,
 				D013F2E5214F622D00E4FA09 /* follow */,
 				D013F2E2214F622D00E4FA09 /* set */,
@@ -142,6 +147,22 @@
 				D047C3D0214B69B0006CE00D /* TYMainTabbarController.m */,
 			);
 			path = TYVideoPayerDemo;
+			sourceTree = "<group>";
+		};
+		D04BD231214FDC9B0044B268 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				D04BD232214FDC9B0044B268 /* UIView+Gesture.h */,
+				D04BD233214FDC9B0044B268 /* UIView+Gesture.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		D079724C2150B0A400183078 /* network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04BD234214FDC9B0044B268 /* UIView+Gesture.m in Sources */,
 				D013F2EC214F622E00E4FA09 /* TYFollowViewController.m in Sources */,
 				D013F2EB214F622E00E4FA09 /* TYSetViewController.m in Sources */,
 				D013F2F0214F822400E4FA09 /* TYfeedPlayCell.m in Sources */,

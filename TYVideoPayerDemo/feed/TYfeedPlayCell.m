@@ -9,10 +9,15 @@
 #import "TYfeedPlayCell.h"
 #import <TYVideoPlayer/TYVideoPlayer.h>
 #import "TYVideoConfiguration.h"
+#import <Masonry/Masonry.h>
+#import "UIView+Gesture.h"
 
 @interface TYfeedPlayCell () <TYVideoPlayerManageDelegate,TYVideoPlayerNetworkDelegate>
 
 @property (nonatomic) TYVideoPlayerManger *playerManger;
+@property (nonatomic,copy) NSString *videoUrl;
+@property (nonatomic, strong) UIButton *playButton;
+
 
 @end
 
@@ -22,21 +27,39 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        [self.contentView addSubview:self.playButton];
+        self.playButton.hidden = YES;
+        [self.playButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self.contentView);
+            make.height.equalTo(@50);
+            make.width.equalTo(@50);
+        }];
         [self resetPlayer];
+        [self.contentView addTapAction:@selector(onClickPause) target:self];
+     
     }
     return self;
 }
 
 - (void)configWithVideoUrl:(NSString *)videoUrl size:(CGSize)size
 {
+//    self.videoUrl = videoUrl;
     [self.playerManger setContentURLStringList:@[videoUrl]];
     self.playerManger.playerView.frame = CGRectMake(0, 0, size.width, size.height);
     //
     [self updateSetting];
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    self.playButton.hidden = YES;
+    [self stop];
+    [self resetPlayer];
+   
+}
+
+- (void)didEndDisplay
+{
     [self stop];
     [self resetPlayer];
 }
@@ -85,12 +108,45 @@
     self.playerManger.networkDelegate = self;
     self.playerManger.delegate = self;
     [self.contentView addSubview:self.playerManger.playerView];
+    if (self.playButton.superview) {
+        [self.contentView bringSubviewToFront:self.playButton];
+    }
 }
+
+- (UIButton *)playButton
+{
+    if (!_playButton) {
+        _playButton = [[UIButton alloc]initWithFrame:CGRectZero];
+        [_playButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+        [_playButton addTarget:self action:@selector(onClickPlaying) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _playButton;
+}
+
+- (void)onClickPlaying
+{
+    if (!self.isPlaying) {
+        [self play];
+        self.playButton.hidden = YES;
+    }
+}
+
+- (void)onClickPause
+{
+    if ([self isPlaying]) {
+        [self pause];
+        self.playButton.hidden = NO;
+    } else {
+        [self play];
+        self.playButton.hidden = YES;
+    }
+}
+
 
 #pragma  mark --- TYVideoPlayerNetworkDelegate
 - (void)didReceiveMetaForURL:(NSURL *)URL mimeType:(NSString *)mimeType cacheSize:(NSUInteger)cacheSize fileSize:(NSUInteger)fileSize
 {
-    NSLog(@" ULR =%@ mimeType=%@ cacheSize=%@ fileSize=%@",URL.absoluteString,mimeType,@(cacheSize),@(fileSize));
+//    NSLog(@" ULR =%@ mimeType=%@ cacheSize=%@ fileSize=%@",URL.absoluteString,mimeType,@(cacheSize),@(fileSize));
 
 }
 

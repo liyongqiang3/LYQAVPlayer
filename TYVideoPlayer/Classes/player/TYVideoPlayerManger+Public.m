@@ -189,7 +189,7 @@
 {
     //    TY_VIDEO_INFO(@"%@ play: state = %@", self.currentItemKey, p_descForState(self.state));
     
-    if (   self.state != TYVideoPlayerStatePause
+    if (self.state != TYVideoPlayerStatePause
         && self.state != TYVideoPlayerStatePrepared) {
         return;
     }

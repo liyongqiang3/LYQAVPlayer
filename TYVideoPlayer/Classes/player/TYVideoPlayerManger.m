@@ -542,9 +542,10 @@ __unused inline static NSString *stringForLoadedTimeRanges(NSArray<NSValue *> *l
         //                       p_descForState(_state),
         //                       p_descForState(state));
         _state = state;
-        
         if (_state != TYVideoPlayerStatePlay) {
             self.currentPlaybackRate = 0;
+        } else {
+            self.currentPlaybackRate = 1;
         }
     }
 }

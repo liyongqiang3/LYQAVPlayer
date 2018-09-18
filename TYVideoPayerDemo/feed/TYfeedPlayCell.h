@@ -14,6 +14,8 @@
 
 - (void)prepareToPlay;
 
+- (void)didEndDisplay;
+
 - (void)play;
 
 - (void)pause;

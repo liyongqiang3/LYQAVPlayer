@@ -10,6 +10,9 @@ target 'TYVideoPlayerDemo' do
   # use_frameworks!
   pod 'SDWebImage', '~>3.7'
   pod 'Masonry'
+  pod 'Mantle', '1.5.6'
+  pod 'AFNetworking'
+
 #    pod 'FLEX'
     pod 'TYVideoPlayer', :path => '.'
   # Pods for TYVideoPlayerDemo

@@ -1,4 +1,22 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Mantle (1.5.6):
+    - Mantle/extobjc (= 1.5.6)
+  - Mantle/extobjc (1.5.6)
   - Masonry (1.1.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -6,12 +24,16 @@ PODS:
   - TYVideoPlayer (0.0.1)
 
 DEPENDENCIES:
+  - AFNetworking
+  - Mantle (= 1.5.6)
   - Masonry
   - SDWebImage (~> 3.7)
   - TYVideoPlayer (from `.`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - Mantle
     - Masonry
     - SDWebImage
 
@@ -20,10 +42,12 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Mantle: a197db93e0f1e36194b1fdbc078219a8492eaef2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TYVideoPlayer: f0c25e06243c9760a1a0984bc90bfd0f76ff44d0
 
-PODFILE CHECKSUM: 3d470c486610efdcaa534143bb9e5b16c6f73606
+PODFILE CHECKSUM: 4bec99ea5ea87bccc6b64a7d04e05de488cb6a7d
 
 COCOAPODS: 1.5.3

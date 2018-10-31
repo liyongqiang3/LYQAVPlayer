@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/utils/TYVideoResourceDeallocManager.h
+../../../../TYVideoPlayer/Classes/Utils/TYVideoResourceDeallocManager.h

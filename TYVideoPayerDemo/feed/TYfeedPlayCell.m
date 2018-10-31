@@ -106,7 +106,7 @@
     self.playerManger = [[TYVideoPlayerManger alloc] init];
     self.playerManger.truncateTailWhenRepeated = YES;
     self.playerManger.networkDelegate = self;
-    self.playerManger.delegate = self;
+    self.playerManger.playDelegate = self;
     [self.contentView addSubview:self.playerManger.playerView];
     if (self.playButton.superview) {
         [self.contentView bringSubviewToFront:self.playButton];

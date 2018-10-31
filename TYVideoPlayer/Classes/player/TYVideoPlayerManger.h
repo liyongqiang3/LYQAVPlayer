@@ -44,7 +44,7 @@ FOUNDATION_EXTERN void TYVideo_RemoveKVOObserverSafely(id target, id observer, N
 @property (nonatomic, assign) BOOL muted;
 
 /// delegate for player's play-related events
-@property (nonatomic, weak) id<TYVideoPlayerManageDelegate> delegate;
+@property (nonatomic, weak) id<TYVideoPlayerManageDelegate> playDelegate;
 
 /// delegate for player's internal events
 @property (nonatomic, weak) id<TYVideoPlayerNetworkDelegate> networkDelegate;
@@ -107,7 +107,7 @@ FOUNDATION_EXTERN void TYVideo_RemoveKVOObserverSafely(id target, id observer, N
  * @param interval      the interval between two block executes
  * @param block         block to execute
  */
-- (void)addPeriodicTimeObserverForInterval:(CMTime)interval usingBlock:(void (^)(CMTime time))block;
+- (void)addPeriodicTimeObserverForInterval:(CMTime)interval usingBlock:(void (^)(CMTime time,NSTimeInterval totalTime,NSInteger curIndex))block;
 
 /*
  * @brief add boundary time observer

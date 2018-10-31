@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/player/TYVideoPlayerNetworkDelegate.h
+../../../../TYVideoPlayer/Classes/Player/TYVideoPlayerNetworkDelegate.h

@@ -15,6 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.initialized = NO;
+        self.backgroundColor = [UIColor clearColor];
     }
     
     return self;
@@ -40,7 +41,8 @@
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
     self.playerLayer.frame = self.bounds;
     [self.layer insertSublayer:self.playerLayer atIndex:0];
-    
+    self.playerLayer.backgroundColor = [UIColor clearColor].CGColor;
+        
     [self.playerLayer addObserver:self.playerManger
                        forKeyPath:@"readyForDisplay"
                           options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew

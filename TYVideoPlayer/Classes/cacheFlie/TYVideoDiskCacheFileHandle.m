@@ -316,20 +316,17 @@
     }
     
     if (TYVideo_isEmptyString(key)) {
-//        TY_VIDEO_ERROR(@"%@ getMetaData error: Retrieve meta data with empty key", key);
         block(TYError(TYVideoCacheErrorEmptyKey, @"Retrieve meta data with empty key"), nil, 0, 0);
         return;
     }
     
     NSString *filePath = [TYVideoDiskCacheFileHandle dataPathWithKey:key];
     if (![FILE_MANAGER fileExistsAtPath:filePath]) {
-//        TY_VIDEO_DEBUG(@"%@ getMetaData error: Data File not exist", key);
         block(TYError(TYVideoCacheErrorDataFileNotExist, @"Data File not exist"), nil, 0, 0);
         return;
     }
     
     if (!(self.metaData[key])) {
-//        TY_VIDEO_DEBUG(@"%@ getMetaData error: Meta data not found", key);
         block(TYError(TYVideoCacheErrorMetaNotFound, @"Meta data not found"), nil, 0, 0);
         return;
     }
@@ -449,8 +446,6 @@
 
 - (void)_clearForKey:(NSString *)key
 {
-//    TY_VIDEO_DEBUG(@"clearForKey: %@", key);
-    
     if (TYVideo_isEmptyString(key)) {
         return;
     }
@@ -478,8 +473,6 @@
 
 - (void)_clearForKeys:(NSArray<NSString *> *)keys
 {
-//    TY_VIDEO_DEBUG(@"clearForKeys: %@", keys);
-    
     if (TYVideo_isEmptyArray(keys)) {
         return;
     }
@@ -498,8 +491,6 @@
 
 - (void)_trimDiskCacheToSize:(NSUInteger)size
 {
-    //    TY_VIDEO_INFO(@"trimDiskCacheToSize start");
-    
     NSArray *resourceKeys = @[NSURLIsDirectoryKey,
                               NSURLContentAccessDateKey,
                               NSURLTotalFileAllocatedSizeKey];
@@ -545,7 +536,6 @@
             NSString *key = fileURL.absoluteString.lastPathComponent;
             if (self.metaData[key]) {
                 [self.metaData removeObjectForKey:key];
-//                TY_VIDEO_DEBUG(@"trimDiskCacheToSize, key: %@", key);
             }
             //
             if (cacheSize <= size) {
@@ -611,12 +601,7 @@ static NSString * const kMetaFilename = @"meta";
         BOOL fileExist = [FILE_MANAGER fileExistsAtPath:[TYVideoDiskCacheFileHandle metaPath] isDirectory:&isDirectory];
         uint64_t freeSize = [TYVideoDiskCacheManger freeFileSystemSize];
         NSString *status = [NSString stringWithFormat:@"fileExist = %@, isDirectory = %@, freeSize = %@", @(fileExist), @(isDirectory), @(freeSize)];
-//        NSString *extra = [NSString stringWithFormat:@"%@", self.metaData];
         NSLog(@"syncMetaData error: %@, metaData: %@", status, self.metaData);
-        //        TY_VIDEO_ERROR(@"syncMetaData error: %@, metaData: %@", status, self.metaData);
-//        if (TY_Reporter) {
-//            //            TY_Reporter(@"SyncMetaDataFail", status, extra);
-//        }
     }
     
     return succeed;

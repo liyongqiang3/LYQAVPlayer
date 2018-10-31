@@ -81,7 +81,7 @@ void TYVideo_RemoveKVOObserverSafely(id target, id observer, NSString *keyPath)
 - (void)dealloc
 {
     [self _resetPlayer];
-    
+//    NSLog(@"dealloc ==================TYVideoPlayerManger");
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -132,7 +132,7 @@ void TYVideo_RemoveKVOObserverSafely(id target, id observer, NSString *keyPath)
     return kCMTimeZero;
 }
 
-- (void)addPeriodicTimeObserverForInterval:(CMTime)interval usingBlock:(void (^)(CMTime time))block
+- (void)addPeriodicTimeObserverForInterval:(CMTime)interval usingBlock:(void (^)(CMTime time,NSTimeInterval totalTime,NSInteger curIndex))block
 {
     if (!block) {
         return;
@@ -223,8 +223,8 @@ void TYVideo_RemoveKVOObserverSafely(id target, id observer, NSString *keyPath)
                     
                     //                    TY_VIDEO_INFO(@"%@ isReadyForDisplay", self.currentItemKey);
                     
-                    if (self.delegate && [self.delegate respondsToSelector:@selector(readyForDisplayForURL:)]) {
-                        [self.delegate readyForDisplayForURL:self.contentURL];
+                    if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(readyForDisplayForURL:)]) {
+                        [self.playDelegate readyForDisplayForURL:self.contentURL];
                     }
                 }
             });
@@ -407,8 +407,8 @@ __unused inline static NSString *stringForLoadedTimeRanges(NSArray<NSValue *> *l
             
             [self _continuePlayFromWaiting];
             
-            if (self.delegate && [self.delegate respondsToSelector:@selector(preparedToPlayForURL:)]) {
-                [self.delegate preparedToPlayForURL:self.contentURL];
+            if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(preparedToPlayForVideoDuration:URL:)]) {
+                [self.playDelegate preparedToPlayForVideoDuration:self.duration URL:self.contentURL];
             }
         }
     });
@@ -515,8 +515,8 @@ __unused inline static NSString *stringForLoadedTimeRanges(NSArray<NSValue *> *l
         _playbackState = playbackState;
         
         dispatch_async_on_main_queue(^{
-            if (self.delegate && [self.delegate respondsToSelector:@selector(playbackStateDidChangeForURL:oldState:newState:)]) {
-                [self.delegate playbackStateDidChangeForURL:self.contentURL oldState:originPlaybackState newState:playbackState];
+            if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(playbackStateDidChangeForURL:oldState:newState:)]) {
+                [self.playDelegate playbackStateDidChangeForURL:self.contentURL oldState:originPlaybackState newState:playbackState];
             }
         });
     }

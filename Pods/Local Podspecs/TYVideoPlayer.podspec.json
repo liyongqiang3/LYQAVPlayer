@@ -16,13 +16,12 @@
   },
   "requires_arc": true,
   "source": {
-    "git": "git@localhost/TYVideoPlayer.git",
+    "git": "git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git",
     "tag": "0.0.1"
   },
   "source_files": [
     "TYVideoPlayer/Classes/*.{h,m}",
     "TYVideoPlayer/Classes/**/*.{h,m}"
   ],
-  "exclude_files": "Classes/Exclude",
   "frameworks": "Foundation"
 }

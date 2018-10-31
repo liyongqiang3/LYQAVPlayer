@@ -60,7 +60,7 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@" TYVideoResourceLoader initWithURL url = %@ ",URL.absoluteString);
+//        NSLog(@" TYVideoResourceLoader initWithURL url = %@ ",URL.absoluteString);
         self.requestList = [NSMutableArray array];
         self.requestURL = URL;
         self.requestURLKey = TYVideoURLStringToCacheKey(URL.absoluteString);

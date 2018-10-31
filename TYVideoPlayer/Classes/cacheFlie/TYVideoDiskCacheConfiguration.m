@@ -25,8 +25,8 @@
 {
     self = [super init];
     if (self) {
-        // 200 MB
-        _costLimit = 200;
+        // 300 MB
+        _costLimit = 300;
         // 5 min
         _autoTrimInterval = 5 * 60;
         //

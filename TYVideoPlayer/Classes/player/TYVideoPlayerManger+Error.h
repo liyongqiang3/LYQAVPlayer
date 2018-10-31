@@ -10,5 +10,6 @@
 @interface TYVideoPlayerManger (Error)
 
 - (void)playbackDidFailWithError:(NSError *)error;
+- (BOOL)retryPlayIfNeeded;
 
 @end

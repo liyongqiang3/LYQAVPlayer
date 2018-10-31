@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
 
   # s.source       = { :git => "http://EXAMPLE/TYVideoPlayer.git", :tag => "#{s.version}" }
 
-  s.source           = { :git => 'git@localhost/TYVideoPlayer.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git', :tag => s.version.to_s }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -95,37 +95,34 @@ Pod::Spec.new do |s|
   #
 
 #  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-    s.source_files = [
-    'TYVideoPlayer/Classes/*.{h,m}',
-    'TYVideoPlayer/Classes/**/*.{h,m}'
-    ]
-  s.exclude_files = "Classes/Exclude"
+#  s.source_files = [
+#  'TYVideoPlayer/Classes/*.{h,m}',
+#  'TYVideoPlayer/Classes/**/*.{h,m}'
+# ]
+#    #s.exclude_files = "Classes/Exclude"
+    s.subspec 'CacheFlie' do |ss|
+            ss.source_files = ['TYVideoPlayer/Classes/CacheFlie/**/*.{h,m}*']
+    end
+    s.subspec 'Prefetch' do |ss|
+        ss.source_files = ['TYVideoPlayer/Classes/Prefetch/**/*.{h,m}*']
+    end
+    s.subspec 'Network' do |ss|
+        ss.source_files = ['TYVideoPlayer/Classes/Network/**/*.{h,m}*']
+    end
+    
+    s.subspec 'Player' do |ss|
+        ss.source_files = ['TYVideoPlayer/Classes/Player/**/*.{h,m}*']
+    end
+    s.subspec 'Utils' do |ss|
+        ss.source_files = ['TYVideoPlayer/Classes/Utils/**/*.{h,m}*']
+    end
+    s.subspec 'Public' do |ss|
+        ss.source_files = ['TYVideoPlayer/Classes/Public/**/*.{h,m}*']
+        ss.public_header_files = ['TYSafeKit/Classes/Public/**/*.h']
+    end
 
-  # s.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-   s.framework  = "Foundation"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+#   s.framework  = "Foundation"
+   s.frameworks = "Foundation", "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

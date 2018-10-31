@@ -43,14 +43,14 @@
         [self.errorDict setObject:updatedError forKey:self.contentURL];
     }
     
-    if (   !self.currentUseCacheFlag
-        && self.delegate
-        && [self.delegate respondsToSelector:@selector(playbackDidFailForURL:error:)]) {
-        [self.delegate playbackDidFailForURL:self.contentURL
+    if (!self.currentUseCacheFlag
+        && self.playDelegate
+        && [self.playDelegate respondsToSelector:@selector(playbackDidFailForURL:error:)]) {
+        [self.playDelegate playbackDidFailForURL:self.contentURL
                                        error:self.contentURL ? self.errorDict[self.contentURL] : nil];
     }
     
-    if ([self _retryPlayIfNeeded]) {
+    if ([self retryPlayIfNeeded]) {
         return;
     }
     
@@ -77,20 +77,20 @@
     
     [self _resetPlayer];
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(playbackDidFailWithErrorDict:)]) {
-        [self.delegate playbackDidFailWithErrorDict:self.errorDict];
+    if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(playbackDidFailWithErrorDict:)]) {
+        [self.playDelegate playbackDidFailWithErrorDict:self.errorDict];
     }
 }
 
 #pragma mark - Play Retry
 
-- (BOOL)_retryPlayIfNeeded
+- (BOOL)retryPlayIfNeeded
 {
     if (TYVideo_isEmptyArray(self.contentURLStringList)) {
         return NO;
     }
     
-    if (   self.currentURLIndex + 1 >= self.contentURLStringList.count
+    if (self.currentURLIndex + 1 >= self.contentURLStringList.count
         && !self.currentUseCacheFlag) {
         return NO;
     }
@@ -98,7 +98,7 @@
     if (self.currentURLIndex + 1 < self.contentURLStringList.count) {
         ++self.currentURLIndex;
     } else {
-        self.currentUseCacheFlag = NO;
+        self.currentUseCacheFlag = YES;
         //
         self.currentURLIndex = 0;
     }

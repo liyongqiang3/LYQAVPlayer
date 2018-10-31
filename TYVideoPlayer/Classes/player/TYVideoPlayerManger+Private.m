@@ -31,7 +31,7 @@
 //    TY_VIDEO_DEBUG(@"%@ resetPlayer", self.currentItemKey);
     
     if (self.resourceLoader) {
-//        [self.resourceLoader stopLoading];
+        [self.resourceLoader stopLoading];
         self.resourceLoader = nil;
     }
     
@@ -147,11 +147,13 @@
 {
     [self.periodicTimeObserverDict.allKeys enumerateObjectsUsingBlock:^(NSArray * _Nonnull param, NSUInteger idx, BOOL * _Nonnull stop) {
         CMTime interval = ((NSValue *)param[0]).CMTimeValue;
-        void (^block)(CMTime time) = param[1];
+        void (^block)(CMTime time,NSTimeInterval totalTime,NSInteger curIndex) = param[1];
         //
+        NSTimeInterval totalTime = self.duration;
+        NSInteger urlIndex = self.currentURLIndex;
         id observer =
         [player addPeriodicTimeObserverForInterval:interval queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
-            block(time);
+            block(time,totalTime,urlIndex);
         }];
         //
         [self.periodicTimeObserverDict setObject:observer forKey:param];
@@ -258,9 +260,19 @@
 - (void)playerItemDidReachEnd:(NSNotification *)notification
 {
 //    TY_VIDEO_DEBUG(@"%@ playerItemDidReachEnd", self.currentItemKey);
-    
-    if (self.repeated) {
+    //[self retryPlayIfNeeded] == YES)
+    dispatch_async_on_main_queue(^{
+        if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(playbackDidFinishForVideoDuration:URL:)]) {
+            [self.playDelegate playbackDidFinishForVideoDuration:self.duration URL:self.contentURL];
+        }
+    });
+    if ((self.repeated&&self.contentURLStringList.count == 1) || (self.repeated &&[self retryPlayIfNeeded])){
         [self _seekToTime:kCMTimeZero shouldPlay:YES];
+        dispatch_async_on_main_queue(^{
+            if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(playbackDidStartForVideoDuration:URL:)]) {
+                [self.playDelegate playbackDidStartForVideoDuration:self.duration URL:self.contentURL];
+            }
+        });
     } else {
         self.state = TYVideoPlayerStateCompleted;
         self.playbackState = TYVideoPlaybackStateStopped;
@@ -268,11 +280,7 @@
         [TYVideoDiskCacheDeleteManager endUseCacheForKey:self.currentItemKey];
     }
     
-    dispatch_async_on_main_queue(^{
-        if (self.delegate && [self.delegate respondsToSelector:@selector(playbackDidFinishForURL:)]) {
-            [self.delegate playbackDidFinishForURL:self.contentURL];
-        }
-    });
+  
 }
 
 - (void)playerItemPlaybackStalled:(NSNotification *)notification

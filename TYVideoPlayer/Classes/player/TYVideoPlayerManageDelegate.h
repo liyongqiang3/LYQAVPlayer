@@ -16,7 +16,15 @@
  *
  * @param URL       video URL
  */
-- (void)playbackDidFinishForURL:(NSURL *)URL;
+- (void)playbackDidFinishForVideoDuration:(NSTimeInterval )duration URL:(NSURL *)URL;
+
+/**
+ * @brief received _seekToTime:kCMTimeZero for @URL.
+ *
+ * @param URL       video URL
+ */
+- (void)playbackDidStartForVideoDuration:(NSTimeInterval )duration URL:(NSURL *)URL;
+
 
 /**
  * @brief the playback state for @URL changed from @oldState to @newState.
@@ -29,14 +37,14 @@
  * @param oldState      the previous playback state
  * @param newState      the current playback state
  */
-- (void)playbackStateDidChangeForURL:(NSURL *)URL oldState:(TYVideoPlaybackState)oldState newState:(TYVideoPlaybackState)newState;
+- (void)playbackStateDidChangeForURL:(NSURL *)URL oldState:(TYVideoPlaybackState)oldDurationState newState:(TYVideoPlaybackState)newState;
 
 /**
  * @brief AVPlayerItemStatus changed to AVPlayerItemStatusReadyToPlay
  *
  * @param URL       video URL
  */
-- (void)preparedToPlayForURL:(NSURL *)URL;
+- (void)preparedToPlayForVideoDuration:(NSTimeInterval)duration URL:(NSURL *)URL;
 
 /**
  * @brief AVPlayerLayer's readyForDisplay changed to YES

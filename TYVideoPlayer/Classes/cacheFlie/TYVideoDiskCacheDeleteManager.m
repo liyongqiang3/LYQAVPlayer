@@ -38,10 +38,7 @@
     if (self) {
         self.shouldDeleteCacheSet = [NSMutableSet set];
         self.usingCacheSet = [NSMutableSet set];
-        //
-//        self.deleteTimer = [NSTimer TY_video_scheduledTimerWithTimeInterval:5 repeats:YES block:^(NSTimer *timer) {
-//            [TYVideoDiskCacheDeleteManager _deleteCachesSafely];
-//        }];
+ 
         self.deleteTimer = [NSTimer  bk_timerWithTimeInterval:5 block:^(NSTimer *timer) {
             [TYVideoDiskCacheDeleteManager _deleteCachesSafely];
         } repeats:YES];

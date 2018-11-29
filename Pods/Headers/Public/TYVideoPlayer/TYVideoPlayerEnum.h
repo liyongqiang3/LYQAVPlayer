@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/Player/TYVideoPlayerEnum.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/player/TYVideoPlayerEnum.h

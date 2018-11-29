@@ -19,9 +19,49 @@
     "git": "git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git",
     "tag": "0.0.1"
   },
-  "source_files": [
-    "TYVideoPlayer/Classes/*.{h,m}",
-    "TYVideoPlayer/Classes/**/*.{h,m}"
+  "frameworks": [
+    "Foundation",
+    "UIKit"
   ],
-  "frameworks": "Foundation"
+  "subspecs": [
+    {
+      "name": "CacheFlie",
+      "source_files": [
+        "TYVideoPlayer/Classes/CacheFlie/**/*.{h,m}*"
+      ]
+    },
+    {
+      "name": "Prefetch",
+      "source_files": [
+        "TYVideoPlayer/Classes/Prefetch/**/*.{h,m}*"
+      ]
+    },
+    {
+      "name": "Network",
+      "source_files": [
+        "TYVideoPlayer/Classes/Network/**/*.{h,m}*"
+      ]
+    },
+    {
+      "name": "Player",
+      "source_files": [
+        "TYVideoPlayer/Classes/Player/**/*.{h,m}*"
+      ]
+    },
+    {
+      "name": "Utils",
+      "source_files": [
+        "TYVideoPlayer/Classes/Utils/**/*.{h,m}*"
+      ]
+    },
+    {
+      "name": "Public",
+      "source_files": [
+        "TYVideoPlayer/Classes/Public/**/*.{h,m}*"
+      ],
+      "public_header_files": [
+        "TYSafeKit/Classes/Public/**/*.h"
+      ]
+    }
+  ]
 }

@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/CacheFlie/TYVideoDiskCacheConfiguration.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/cacheFlie/TYVideoDiskCacheConfiguration.h

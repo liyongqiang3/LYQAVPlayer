@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/Prefetch/TYVideoPrefetchHitRecorder.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/Prefetch/TYVideoPrefetchHitRecorder.h

@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/Utils/NSTimer+BlocksKit.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/utils/NSTimer+BlocksKit.h

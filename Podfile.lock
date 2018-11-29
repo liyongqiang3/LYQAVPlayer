@@ -21,14 +21,26 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - TYVideoPlayer (0.0.1)
+  - TYVideoPlayer (0.0.1):
+    - TYVideoPlayer/CacheFlie (= 0.0.1)
+    - TYVideoPlayer/Network (= 0.0.1)
+    - TYVideoPlayer/Player (= 0.0.1)
+    - TYVideoPlayer/Prefetch (= 0.0.1)
+    - TYVideoPlayer/Public (= 0.0.1)
+    - TYVideoPlayer/Utils (= 0.0.1)
+  - TYVideoPlayer/CacheFlie (0.0.1)
+  - TYVideoPlayer/Network (0.0.1)
+  - TYVideoPlayer/Player (0.0.1)
+  - TYVideoPlayer/Prefetch (0.0.1)
+  - TYVideoPlayer/Public (0.0.1)
+  - TYVideoPlayer/Utils (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking
   - Mantle (= 1.5.6)
   - Masonry
   - SDWebImage (~> 3.7)
-  - TYVideoPlayer (from `.`)
+  - "TYVideoPlayer (from `git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git`, branch `master`)"
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -39,15 +51,21 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   TYVideoPlayer:
-    :path: "."
+    :branch: master
+    :git: "git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git"
+
+CHECKOUT OPTIONS:
+  TYVideoPlayer:
+    :commit: 2c05b399307b65a2999693a091259c452426abaa
+    :git: "git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Mantle: a197db93e0f1e36194b1fdbc078219a8492eaef2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  TYVideoPlayer: f737e7ab280b70efc445f20451d82c43057f400a
+  TYVideoPlayer: 84477e930edb35408bb023dbb53a4addbb95af1f
 
-PODFILE CHECKSUM: 4bec99ea5ea87bccc6b64a7d04e05de488cb6a7d
+PODFILE CHECKSUM: 752ee46c4f570bd9e8b57d06381d6886016a0693
 
 COCOAPODS: 1.5.3

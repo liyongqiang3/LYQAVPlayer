@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/Prefetch/TYVideoPrefetchTaskManager.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/Prefetch/TYVideoPrefetchTaskManager.h

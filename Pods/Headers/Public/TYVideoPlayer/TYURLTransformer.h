@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/Utils/TYURLTransformer.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/utils/TYURLTransformer.h

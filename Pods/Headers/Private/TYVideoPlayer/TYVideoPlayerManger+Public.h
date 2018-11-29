@@ -1,1 +1,1 @@
-../../../../TYVideoPlayer/Classes/Player/TYVideoPlayerManger+Public.h
+../../../TYVideoPlayer/TYVideoPlayer/Classes/player/TYVideoPlayerManger+Public.h

@@ -15,8 +15,8 @@ target 'TYVideoPlayerDemo' do
 
 #    pod 'FLEX'
 #pod 'TYSafeKit', :git => 'git@code.aliyun.com:zzuliliyongqiang/SafeKit.git', :branch => 'master',:configurations => ['Release']
-#pod 'TYVideoPlayer', :path => '.'
-    pod 'TYVideoPlayer', :git =>'git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git', :branch => 'master'
+pod 'TYVideoPlayer', :path => './'
+#    pod 'TYVideoPlayer', :git =>'git@code.aliyun.com:zzuliliyongqiang/TYVideoPlayer.git', :branch => 'master'
   # Pods for TYVideoPlayerDemo
   
   post_install do |installer|
